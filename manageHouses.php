@@ -30,14 +30,14 @@ $result = $conn->query($sql);
 
 
 echo "<table>";
-echo "<tr><th>HouseNo</th> <th> Street </th> <th> City </th> <th> Room </th>  <th> ownerNo </th> <th> Action </th> </tr>";
+echo "<tr><th>HouseNo</th> <th> Street </th> <th> City </th> <th> Room </th>  <th> OwnerNo </th> <th> Action </th> </tr>";
 if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {    
 	echo "<tr> <td>$row[houseNo]</td> <td>$row[street]</td> <td>$row[city]</td>  <td>$row[room]</td> <td>$row[ownerNo]</td> 
-  <td><a title='Click to view the Client' href='viewHouse.php?houseNo=$row[houseNo]'<button class='btn btn-success btn-mini'> View </button></a> 
-	<a title='Click to edit the Client' href='editHouse.php?houseNo=$row[houseNo]'<button class='btn btn-warning btn-mini'> Edit </button></a> 
-	<a title='Click to delete the Client' href='removeHouse.php?houseNo=$row[houseNo]'<button class='btn btn-danger btn-mini'> Delete </button></a> </td></tr>";
+  <td><a title='Click to view the house' href='viewHouse.php?houseNo=$row[houseNo]'<button class='btn btn-success btn-mini'> View </button></a> 
+	<a title='Click to edit the house' href='editHouse.php?houseNo=$row[houseNo]'<button class='btn btn-warning btn-mini'> Edit </button></a> 
+	<a title='Click to delete the house' href='removeHouse.php?houseNo=$row[houseNo]'<button class='btn btn-danger btn-mini'> Delete </button></a> </td></tr>";
   }
 } else {
   echo "0 results";

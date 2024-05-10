@@ -36,8 +36,8 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {    
 	echo "<tr> <td>$row[ownerNo]</td> <td>$row[name]</td> <td>$row[address]</td>  <td>$row[city]</td> <td>$row[email]</td> 
   <td><a title='Click to view the Owner' href='viewOwner.php?ownerNo=$row[ownerNo]'<button class='btn btn-success btn-mini'> View </button></a> 
-	<a title='Click to edit the Client' href='editOwner.php?ownerNo=$row[ownerNo]'<button class='btn btn-warning btn-mini'> Edit </button></a> 
-	<a title='Click to delete the Client' href='removeOwner.php?ownerNo=$row[ownerNo]'<button class='btn btn-danger btn-mini'> Delete </button></a> </td></tr>";
+	<a title='Click to edit the Owner' href='editOwner.php?ownerNo=$row[ownerNo]'<button class='btn btn-warning btn-mini'> Edit </button></a> 
+	<a title='Click to delete the Owner' href='removeOwner.php?ownerNo=$row[ownerNo]'<button class='btn btn-danger btn-mini'> Delete </button></a> </td></tr>";
   }
 } else {
   echo "0 results";

@@ -39,7 +39,7 @@ WHERE houseNo NOT IN (
 $result = $conn->query($sql);
 
 echo "<table>";
-echo "<tr><th>HouseNo</th> <th> Street </th> <th> City </th> <th> Room </th>  <th> ownerNo </th> <th> Action </th> </tr>";
+echo "<tr><th>HouseNo</th> <th> Street </th> <th> City </th> <th> Room </th>  <th> OwnerNo </th> <th> Action </th> </tr>";
 if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {    

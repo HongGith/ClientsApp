@@ -18,7 +18,7 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
     echo " 
     <form action='updateHouse.php' method='post'>
-    HouserNo: <input type='text' name='houseNo' value='$row[houseNo]' readonly><br><br>
+    HouseNo: <input type='text' name='houseNo' value='$row[houseNo]' readonly><br><br>
     Street: <input type='text' name='street' value='$row[street]'><br><br>
     City: <input type='text' name='city' value='$row[city]'><br><br>
     Rooms: <input type='text' name='room' value='$row[room]'><br><br>
