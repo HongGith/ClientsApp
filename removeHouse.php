@@ -11,7 +11,7 @@ $houseNo = $_GET['houseNo'];
 
 echo "<form action='deleteHouse.php' method='post'>";
 echo "
-	HouseNo: <input type='text' name='houseNo' value='$houseNo'><br><br><br>
+	HouseNo: <input type='text' name='houseNo' value='$houseNo' readonly><br><br><br>
 	<input type='submit'>
 ";
 echo "</form>";

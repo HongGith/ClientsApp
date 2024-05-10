@@ -18,7 +18,7 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
     echo " 
     <form action='updateOwner.php' method='post'>
-    OwnerNo: <input type='text' name='ownerNo' value='$row[ownerNo]'><br><br>
+    OwnerNo: <input type='text' name='ownerNo' value='$row[ownerNo]' readonly><br><br>
     Name: <input type='text' name='name' value='$row[name]'><br><br>
     Address: <input type='text' name='address' value='$row[address]'><br><br>
     City: <input type='text' name='city' value='$row[city]'><br><br>

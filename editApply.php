@@ -20,10 +20,10 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
     echo " 
     <form action='updateApply.php' method='post'>
-    HouserNo: <input type='text' name='houseNo' value='$row[houseNo]'><br><br>
-    Street: <input type='text' name='street' value='$row[street]'><br><br>
-    City: <input type='text' name='city' value='$row[city]'><br><br>
-    Rooms: <input type='text' name='room' value='$row[room]'><br><br>
+    HouserNo: <input type='text' name='houseNo' value='$row[houseNo]' readonly><br><br>
+    Street: <input type='text' name='street' value='$row[street]' readonly><br><br>
+    City: <input type='text' name='city' value='$row[city]' readonly><br><br>
+    Rooms: <input type='text' name='room' value='$row[room]' readonly><br><br>
     StudentNo: <input type='text' name='studentNo'><br><br>
     StartDate: <input type='text' name='startDate' value='$startDate'><br><br>
     FinishDate: <input type='text' name='finishDate'><br><br>

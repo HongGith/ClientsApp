@@ -14,10 +14,10 @@ $finishDate = $_GET['finishDate'];
 
 echo "<form action='deleteRecord.php' method='post'>";
 echo "
-	StudentNo: <input type='text' name='studentNo' value='$studentNo'><br><br><br>
-	HouseNo: <input type='text' name='houseNo' value='$houseNo'><br><br><br>
-	StartDate: <input type='text' name='startDate' value='$startDate'><br><br><br>
-	FinishDate: <input type='text' name='finishDate' value='$finishDate'><br><br><br>
+	StudentNo: <input type='text' name='studentNo' value='$studentNo' readonly><br><br><br>
+	HouseNo: <input type='text' name='houseNo' value='$houseNo' readonly><br><br><br>
+	StartDate: <input type='text' name='startDate' value='$startDate' readonly><br><br><br>
+	FinishDate: <input type='text' name='finishDate' value='$finishDate' readonly><br><br><br>
 	<input type='submit'>
 ";
 echo "</form>";

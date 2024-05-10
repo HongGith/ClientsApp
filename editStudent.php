@@ -8,10 +8,6 @@
 include 'config.php'; 
 
 $studentNo = $_GET['studentNo'];
-$name = $_POST["name"];
-$sex = $_POST["sex"];
-$age = $_POST["age"];
-$email = $_POST["email"];
 
 $sql = "SELECT studentNo, name, sex, age, email FROM Students WHERE studentNo = '$studentNo'";
 $result = $conn->query($sql);
@@ -22,7 +18,7 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
     echo " 
     <form action='updateStudent.php' method='post'>
-    StudentNo: <input type='text' name='studentNo' value='$row[studentNo]'><br><br>
+    StudentNo: <input type='text' name='studentNo' value='$row[studentNo]' readonly><br><br>
     Name: <input type='text' name='name' value='$row[name]'><br><br>";
 
     if("$row[sex]" == "Male")

@@ -11,7 +11,7 @@ $studentNo = $_GET['studentNo'];
 
 echo "<form action='deleteStudent.php' method='post'>";
 echo "
-	StudentNo: <input type='text' name='studentNo' value='$studentNo'><br><br><br>
+	StudentNo: <input type='text' name='studentNo' value='$studentNo' readonly><br><br><br>
 	<input type='submit'>
 ";
 echo "</form>";

@@ -11,7 +11,7 @@ $ownerNo = $_GET['ownerNo'];
 
 echo "<form action='deleteOwner.php' method='post'>";
 echo "
-	OwnerNo: <input type='text' name='ownerNo' value='$ownerNo'><br><br><br>
+	OwnerNo: <input type='text' name='ownerNo' value='$ownerNo' readonly><br><br><br>
 	<input type='submit'>
 ";
 echo "</form>";
