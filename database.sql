@@ -1,10 +1,3 @@
-DROP TABLE Donors;
-DROP TABLE Foods;
-DROP TABLE ReceiveRecords;
-DROP TABLE DonateRecords;
-DROP TABLE Students;
-
-
 CREATE TABLE Students (
 studentNo VARCHAR(4),
 name VARCHAR(30),
